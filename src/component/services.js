@@ -2,26 +2,25 @@ import React from "react";
 
 export default function ServicesCard(prop){
     return(
-        <div className="App-service">
             <div className="App-service-item">
-                <div className="row height">
-                    <div className="col-8">
-                        <div className="row justify-c-center">
+                <div className="row justify-c-center">
+                    <div className="col-12">
+                        <div className="row ">
                             <div className="col-3">
-                                img
+                                <img src={prop.img} width="100%"></img>
                                 {/* <img></img> */}
                             </div>
                             <div className="col-9">
-                                 <div className="location">
-                                    <h3 className="location-title">Japan</h3>
-                                    <a href="#" className="location-map">map</a>
+                                 <div className="location ml-2">
+                                    <h3 className="location-title">{prop.location}</h3>
+                                    <a href={prop.locationMap} className="location-map">map</a>
                                  </div>
-                                 <div className="title">
-                                    <h2>title</h2>
+                                 <div className="title ml-2">
+                                    <h2>{prop.title}</h2>
                                  </div>
-                                 <div className="details">
-                                    <p><strong>from date</strong> - <strong>to date</strong></p>
-                                    <p>paraghrap</p>
+                                 <div className="details ml-2">
+                                    <p>from {prop.fromDate} - to {prop.toDate}</p>
+                                    <p>{prop.decription}</p>
                                  </div>   
                             </div>
                         </div>
@@ -29,7 +28,5 @@ export default function ServicesCard(prop){
                     </div>
                 </div>
             </div>
-            
-        </div>
     )
 } 

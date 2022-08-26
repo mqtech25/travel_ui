@@ -20,12 +20,13 @@
     border-radius: 5px;
   }
   :where(.App-service) h2{
-    font-size: 32px;
+    margin-top: 5px;
+    font-size: 24px;
     font-weight: 700;
   }
   .location{
     display: flex;
-    gap: 20px;
+    gap: 10px;
   }
   .location-map{
     color: var(--primary-dark-secondary);
